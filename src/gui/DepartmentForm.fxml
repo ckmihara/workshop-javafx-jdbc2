@@ -28,7 +28,7 @@
             <Label text="Name" GridPane.rowIndex="1" />
             <TextField fx:id="txtId" editable="false" GridPane.columnIndex="1" />
             <TextField fx:id="txtName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label fx:id="LabelErrorName" textFill="#ef0404" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Label fx:id="labelErrorName" textFill="#ef0404" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets left="5.0" top="5.0" />
                </GridPane.margin>
