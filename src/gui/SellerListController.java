@@ -117,6 +117,8 @@ public class SellerListController implements Initializable, DataChangeListener {
 			controller.setSeller(obj);
 
 			controller.setServices(new SellerService(), new DepartmentService());
+			
+			controller.loadAssociatedObjects();
 
 			controller.subscribeDataChangeListener(this);
 
@@ -130,6 +132,7 @@ public class SellerListController implements Initializable, DataChangeListener {
 			dialogStage.initModality(Modality.WINDOW_MODAL);
 			dialogStage.showAndWait();
 		} catch (IOException e) {
+			e.printStackTrace();
 			Alerts.showAlert("IO Exception", "Error loading view", e.getMessage(), AlertType.ERROR);
 		}
 	}
